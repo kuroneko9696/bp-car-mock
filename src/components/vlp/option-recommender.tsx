@@ -91,7 +91,7 @@ export function OptionRecommender({
         )}
 
         <Tabs defaultValue={selectedScene ? "recommended" : "all"} className="space-y-6">
-          <TabsList className="bg-[#F5F3EF] p-1 rounded-xl grid w-full max-w-md mx-auto grid-cols-2 h-auto">
+          <TabsList className={`bg-[#F5F3EF] p-1 rounded-xl grid w-full max-w-md mx-auto h-auto ${selectedScene ? "grid-cols-3" : "grid-cols-2"}`}>
             {selectedScene && (
               <TabsTrigger
                 value="recommended"

@@ -50,7 +50,7 @@ export function GradeSelector({
             return (
               <Card
                 key={grade.id}
-                className={`relative card-premium overflow-hidden border-0 ${
+                className={`relative card-premium border-0 ${
                   isSelected
                     ? "ring-2 ring-[#C3002F] shadow-[var(--shadow-glow-red)]"
                     : isRecommended
